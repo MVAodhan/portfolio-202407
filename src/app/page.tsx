@@ -8,12 +8,12 @@ export default function Home() {
     <>
       <main className="flex h-full flex-col items-center justify-between">
         <section className="flex flex-col gap-5 items-center">
-          <div className="w-full mt-20 flex items-center flex-row-reverse">
+          <div className="w-full mt-20 flex items-center flex-row-reverse 2xl:w-11/12">
             <Avatar className="h-[50px] w-[50px] sm:h-[150px] sm:w-[150px]">
               <AvatarImage src="/avatar.png" />
               <AvatarFallback>AH</AvatarFallback>
             </Avatar>
-            <p className="text-base sm:text-lg md:text-2xl md:m-0 px-5 md:px-20">
+            <p className="text-xs sm:text-base px-5  sm:px-10 lg:text-2xl md:m-0 md:px-20 ">
               {" "}
               Kia Ora, I&apos;m Aodhan Hamilton, a Sull Stack Software Developer
               and a part-time Digital Assistant.{" "}
@@ -29,7 +29,7 @@ export default function Home() {
           </div>
         </section>
         <h2 className="text-3xl font-bold">Work and Projects</h2>
-        <div className="w-full rounded flex flex-col gap-5">
+        <div className="w-full rounded flex flex-col gap-5 mb-24">
           {projects.map((project, i) => (
             <MyCard
               key={i}
