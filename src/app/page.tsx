@@ -1,7 +1,7 @@
-import MyCard from "@/components/Card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { projects, skills } from "./content";
-import Pill from "@/components/Pill";
+import Pill from "@/my-components/Pill";
+import MyCard from "@/my-components/Card";
 
 export default function Home() {
   return (
