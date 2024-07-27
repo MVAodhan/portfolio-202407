@@ -20,17 +20,17 @@ export default function RootLayout({
       <html lang="en" suppressHydrationWarning>
         <head />
         <body className="flex justify-center bg-slate-100 dark:bg-slate-900">
-          <div className="w-11/12 md:w-4/5 lg:w-3/5">
-            <ThemeProvider
-              attribute="class"
-              defaultTheme="system"
-              enableSystem
-              disableTransitionOnChange
-            >
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <div className="w-11/12 md:w-4/5 lg:w-3/5">
               <Nav />
               {children}
-            </ThemeProvider>
-          </div>
+            </div>
+          </ThemeProvider>
         </body>
       </html>
     </>
