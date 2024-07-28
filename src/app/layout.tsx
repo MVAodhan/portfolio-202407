@@ -7,6 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 import { ThemeProvider as NextThemesProvider } from "next-themes";
 import { type ThemeProviderProps } from "next-themes/dist/types";
 import Nav from "@/my-components/Nav";
+import { ThemeProvider } from "@/components/theme-provider";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -38,8 +39,4 @@ export default function RootLayout({
       </html>
     </>
   );
-}
-
-export function ThemeProvider({ children, ...props }: ThemeProviderProps) {
-  return <NextThemesProvider {...props}>{children}</NextThemesProvider>;
 }
