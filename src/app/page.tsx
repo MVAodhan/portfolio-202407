@@ -15,7 +15,7 @@ export default function Home() {
             </Avatar>
             <p className="text-xs sm:text-base px-5  sm:px-10 lg:text-2xl md:m-0 md:px-20 ">
               {" "}
-              Kia Ora, I&apos;m Aodhan Hamilton, a Sull Stack Software Developer
+              Kia Ora, I&apos;m Aodhan Hamilton, a Full Stack Software Developer
               and a part-time Digital Assistant.{" "}
             </p>
           </div>
